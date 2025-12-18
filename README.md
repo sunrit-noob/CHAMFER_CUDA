@@ -1,8 +1,10 @@
 # CHAMFER_CUDA
 
-+ author: [sunrit2022pers@gmail.com](sunrit2022pers@gmail.com)
+This repository provides a CUDA-accelerated implementation of the Chamfer Distance for efficient point cloud distance computation in Python, integrated with PyTorch.
 
-#### Performance
+author: [sunrit2022pers@gmail.com](sunrit2022pers@gmail.com)
+
+### Performance
 
 + dim   = 5
 + loop  = 5
@@ -16,28 +18,15 @@
 | 10000   | 10000   | 241.3 ms | 28.07 ms | 8.60X    |
 | 30000   | 50      | 102.4 ms | 38.53 ms | 2.65X    |
 
-#### Install
+### Installation
 
-+ from source
-
-<!-- ```bash
+```bash
 git clone https://github.com/unlimblue/KNN_CUDA.git
 cd KNN_CUDA
 make && make install
-``` -->
-<!-- 
-+ for windows
+```
 
-You should use branch `windows`:
-
-```bash
-git clone --branch windows https://github.com/unlimblue/KNN_CUDA.git
-cd C:\\PATH_TO_KNN_CUDA
-make
-make install
-``` -->
-
-#### Usage
+### Usage
 
 ```python
 import torch
@@ -68,3 +57,11 @@ pc2 = torch.rand(32, 50, 5).cuda()
 
 cd_dist = cd(pc1, pc2)  # 32
 ```
+
+Try it on Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1N8zlO32QJCEk1IJBo3S37LTRxQEimHot?usp=drive_link)
+
+*Note: Please ensure the Colab runtime is set to GPU (Runtime > Change runtime type > Hardware accelerator)*
+
+### Inspirations
+
+The structure of this repository is inspired from the structure of [KNN_CUDA](https://github.com/unlimblue/KNN_CUDA)
