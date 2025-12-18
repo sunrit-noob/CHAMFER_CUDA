@@ -21,8 +21,8 @@ author: [sunrit2022pers@gmail.com](sunrit2022pers@gmail.com)
 ### Installation
 
 ```bash
-git clone https://github.com/unlimblue/KNN_CUDA.git
-cd KNN_CUDA
+git clone https://github.com/sunrit-noob/CHAMFER_CUDA.git
+cd CHAMFER_CUDA
 make && make install
 ```
 
